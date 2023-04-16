@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://jessarcher.github.io/zsh-artisan/logo.svg?1" alt="zsh-artisan - Enhanced Laravel integration for zsh" width="400">
+    <img src="https://owrasor.github.io/zsh-artisan/logo.svg?1" alt="zsh-artisan - Enhanced Laravel integration for zsh" width="400">
 </p>
 
 This plugin adds an `artisan` shell command with the following features:
@@ -14,7 +14,7 @@ This plugin adds an `artisan` shell command with the following features:
 * It will run commands using `docker compose` (or `docker-compose`) if a known container name is found.
 
 <p align="center">
-    <img src="https://jessarcher.github.io/zsh-artisan/demo.svg?1">
+    <img src="https://owrasor.github.io/zsh-artisan/demo.svg?1">
 </p>
 
 ## Requirements
@@ -30,7 +30,7 @@ This plugin adds an `artisan` shell command with the following features:
 Add the following bundle to your `.zshrc`:
 
 ```zsh
-antigen bundle jessarcher/zsh-artisan
+antigen bundle owrasor/zsh-artisan
 ```
 
 ### [Fig](https://fig.io)
@@ -39,14 +39,14 @@ Fig adds apps, shortcuts, and autocomplete to your existing terminal.
 
 Install `artisan` in just one click.
 
-<a href="https://fig.io/plugins/other/zsh-artisan_jessarcher" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
+<a href="https://fig.io/plugins/other/zsh-artisan_owrasor" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
 
 ### Oh-my-zsh
 
 First download the plugin to your oh-my-zsh custom plugin location:
 
 ```zsh
-git clone https://github.com/jessarcher/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan
+git clone https://github.com/owrasor/zsh-artisan.git ~/.oh-my-zsh/custom/plugins/artisan
 ```
 
 > Note that the repository name is prefixed with `zsh-`, however the plugin
@@ -67,7 +67,7 @@ plugins=(
 Add the following to your `.zshrc`:
 
 ```zsh
-zplug "jessarcher/zsh-artisan"
+zplug "owrasor/zsh-artisan"
 ```
 
 ## Configuration
@@ -135,7 +135,7 @@ ARTISAN=/home/vagrant/.oh-my-zsh/custom/plugins/artisan
 if [ -d "$ARTISAN" ]; then
   echo "$ARTISAN exist"
 else
-  git clone https://github.com/jessarcher/zsh-artisan.git $ARTISAN
+  git clone https://github.com/owrasor/zsh-artisan.git $ARTISAN
   sed -i 's/plugins=(git)/plugins=(git composer artisan)/g' /home/vagrant/.zshrc
   source /home/vagrant/.zshrc
 fi
